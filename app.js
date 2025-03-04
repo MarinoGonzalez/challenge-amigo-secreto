@@ -39,8 +39,10 @@ function sortearAmigo(){
         alert("Por Favor agrega dos o más amigos");
         return;
     }else{
+        limpiarLista();
         let amigoSecreto = listaDeAmigosA[Math.floor(Math.random() * listaDeAmigosA.length)]
         amigoSorteado.innerHTML = "El amigo secreto es:" + amigoSecreto;
+        listaDeAmigosA = [];
     }
 
 }
